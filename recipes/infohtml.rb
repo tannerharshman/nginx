@@ -2,8 +2,8 @@
 
 # Create directory for the site
 directory '/var/www/html/voidworks' do
-  owner 'www-data' # Adjust owner and group based on your server configuration (idk what to put here)
-  group 'www-data'
+  owner 'brood' # Adjust owner and group based on your server configuration (idk what to put here)
+  group 'brood'
   mode '0755'
   action :create
 end
@@ -20,8 +20,8 @@ file '/var/www/html/voidworks/index.html' do
       <p>This is a placeholder.</p>
   </body>
   </html>'
-  owner 'www-data' # Adjust owner and group based on your server configuration (im guessing this would match the previous permissions)
-  group 'www-data'
+  owner 'brood' # Adjust owner and group based on your server configuration (im guessing this would match the previous permissions)
+  group 'brood'
   mode '0644'
   action :create
 end
